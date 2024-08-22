@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+}
+
+cite {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.social-media {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media li {
+    margin-right: 20px;
+}
+
+.social-media a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #333;
+    width: 50%;
+}
+
+#password-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#submit-password {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+      border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-password:hover {
+    background-color: #444;
+}
+
+#password-hint {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+    .modal-content {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 95%;
+    }
+    .modal-content {
+        width: 90%;
+    }
+}
